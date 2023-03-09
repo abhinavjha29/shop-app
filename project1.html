@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Tracker</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Expense Tracker</h1>
+		<form id="expense-form">
+			<div class="form-group">
+				<label for="expense-name">Name</label>
+				<input type="text" id="expense-name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="expense-amount">Amount</label>
+				<input type="number" id="expense-amount" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-primary">Add Expense</button>
+		</form>
+		<hr>
+		<table id="expense-table" class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Amount</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<script>
